@@ -1,3 +1,55 @@
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
 
+a {
+  text-decoration: none;
+}
+
+.main-page {
+  max-width: 1400px;
+}
+
+.top-section {
+  max-width: 1400px;
+  width: 100%;
+  background-color: #F3C6BD;
+}
+
+.header {
+  width: 1140px;
+  display: flex;
+  margin: auto;
+}
+
+.menu {
+  margin: auto;
+  padding-top: 41px;
+  width: 1140px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.logo_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 15px;
+}
+.logo_image {
+  width: 60px;
+  height: 60px;
+}
+
+.logo-description {
+  height: 51px;
+}
 
 /*# sourceMappingURL=style.css.map */
