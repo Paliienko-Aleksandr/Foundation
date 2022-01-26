@@ -19,11 +19,12 @@ ul {
   max-width: 1400px;
   margin: auto;
   min-height: 100vh;
-}
+  overflow-x: hidden;
+} 
 
-.top-section {
+/* .top-section {
   background-color: #F3C6BD;
   padding-top: 39px;
-}
+} */
 
 /*# sourceMappingURL=style.css.map */
