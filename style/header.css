@@ -107,6 +107,7 @@
     display: none;
   }
   .logo_description {
+    display: inline;
     font-size: 18px;
     line-height: 25px;
     color: #2B292D;
