@@ -10,10 +10,15 @@
 a{
   text-decoration: none;
 }
+ul{
+  list-style-type: none;
+}
+
+
 .page{
   display: flex;
   flex-direction: column;
-  max-width: 1400px;
+  max-width: $max-width;
   margin: auto;
   min-height: 100vh;
 }
@@ -42,7 +47,7 @@ a{
   margin-right: 0px;
 }
 .navigation-list_item_selected{
-  font-weight: 700;
+  font-weight: $bold;
 }
 .navigation_arrow{
   width: 8px;
@@ -65,7 +70,7 @@ a{
 .logo_name{
   font-size: 20px;
   line-height: 25px;
-  font-weight: 700;
+  font-weight: $bold;
 }
 .logo_description{
   font-size: 18px;
@@ -95,6 +100,34 @@ a{
   display: flex;
   flex-direction: column;
 }
+.about-company{
+  margin-top: 44px;
+}
+.additional-navigation{
+  margin-top: 60px;
+  margin-left: auto;
+  display: flex;
+}
+.additional-navigation_column{
+  margin-right: 29px;
+}
+.nav-links_title{
+  font-weight: $bold;
+  font-size: 22px;
+  line-height: 28px;
+  color: $primary-color-text;
+}
+.nav-links_list{
+  margin-top: 18px;
+}
+.nav-links_list-item{
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.nav-links{
+  width: 265px;
+}
 .footer-links{
   display: flex;
   align-items: center;
@@ -106,6 +139,7 @@ a{
   width: 1140px;
   height: 338px;
   margin: 0 auto;
+  display: flex;
 }
 .footer_line{
   border-top: 1px solid #2B292D;
@@ -133,4 +167,18 @@ a{
 }
 .social-links_item{
   margin-left: 20px;
+}
+.footer-description{
+  width: 360px;
+  margin-top: 26px;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.logo_icon_wrapper{
+  display: flex;
+  margin-top: 25px;
+}
+.app_store{
+  margin-right: 10px;
 }
