@@ -56,12 +56,16 @@
   .order_wrapper{
     width: 1140px;
     margin: auto;
+    margin-left: 224px;
     margin-top: 73px;
     display: flex;
   }
   .order_description{
     margin-left: 122px;
     margin-right: 230px;
+  }
+  .order_text{
+    text-align: inherit;
   }
   .email_send{
     display: flex;
