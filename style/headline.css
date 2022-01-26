@@ -2,7 +2,7 @@
  width: 100%;
 }
 .headline_content{
-  margin: 0px 15px 33px;
+  margin: 35px 15px 33px;
 }
 
 .headline_title{
@@ -10,6 +10,7 @@
   font-size: 50px;
   line-height: 50px;
   letter-spacing: -0.3125px;
+  margin: 0;
 }
 .headline_description{
   margin-top: 24px;
