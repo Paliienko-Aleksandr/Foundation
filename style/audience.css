@@ -96,11 +96,14 @@
     margin-top: 30px;
   }
   .audience_buttons{
+    display: flex;
+    justify-content: center;
     margin-top: 34px;
   }
   .audience_buttons_get_started{
     width: 160px;
     margin-right: 10px;
+    margin-bottom: 0px;
   }
   .audience_buttons_learn_more{
     width: 158px;
