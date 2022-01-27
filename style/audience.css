@@ -78,12 +78,9 @@
     margin: auto;
     margin-top: 108px;
   }
-  /* .audience_text{
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 34px;
+  .audience_text{
     color: #2B292D;
-  } */
+  } 
   .understand_your_audience{
     margin-top: 24px;
     font-size: 56px;
@@ -98,7 +95,7 @@
   .audience_buttons{
     display: flex;
     justify-content: center;
-    margin-top: 34px;
+    /* margin-top: 34px; */
   }
   .audience_buttons_get_started{
     width: 160px;
