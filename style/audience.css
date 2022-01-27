@@ -1,0 +1,107 @@
+.audience{
+  width: 100%;
+ background-color: rgb(0, 161, 198, 0.07); 
+}
+.audience_wrapper{
+  margin: 50px 15px 40px 15px;
+  text-align: center;
+}
+.audience_text{
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: #2B292D;
+}
+.understand_your_audience{
+  margin-top: 17px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.357143px;
+}
+.money_supply_for_clients{
+  margin-top: 18px;
+  font-size: 24px;
+  line-height: 34px;
+}
+.audience_buttons{
+  margin-top: 30px;
+}
+.audience_buttons_get_started{
+  width: 100%;
+  margin-bottom: 12px;
+}
+.audience_buttons_learn_more{
+  width: 100%;
+  height: 48px;
+  background-color: #fff;
+  border: none;
+}
+.cards{
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.card_logo{
+  height: 300px;
+  background-color: #fff;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 10%), 0px 4px 6px rgb(0 0 0 / 5%), inset 0px 1px 0px rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.cards_with_logo_icon{
+  padding-top: 22px;
+  text-align: center;
+}
+.cards_with_logo_text{
+  margin-top: 22px;
+  margin-bottom: 33px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2B292D;
+}
+
+
+@media screen and (min-width:400px) {
+  .audience{
+    width: 1400px;
+  }
+  .audience_wrapper{
+    width: 555px;
+    margin: auto;
+    margin-top: 108px;
+  }
+  .understand_your_audience{
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+  }
+  .money_supply_for_clients{
+    margin-top: 30px;
+  }
+  .audience_buttons{
+    margin-top: 34px;
+  }
+  .audience_buttons_get_started{
+    width: 160px;
+  }
+  .audience_buttons_learn_more{
+    width: 158px;
+  }
+  .cards{
+    margin: 111px 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card_logo{
+    width: 262px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 10%), 0px 4px 6px rgb(0 0 0 / 5%), inset 0px 1px 0px rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    margin-right: 30px;
+  }
+  
+}
