@@ -1,45 +1,50 @@
 .headline{
  width: 100%;
-}
-.headline_content{
-  margin: 35px 15px 33px;
+
+    &_content{
+      margin: 35px 15px 33px;
+    }
+
+    &_title{
+      font-weight:700;
+      font-size: 50px;
+      line-height: 50px;
+      letter-spacing: -0.3125px;
+      color: #2B292D;
+      margin: 0;
+    }
+
+    &_description{
+      margin-top: 24px;
+      font-size: 24px;
+      line-height: 34px;
+      color: #2B292D;
+    }
+
+    &_actions{
+      margin-top: 30px;
+    }
+
+    &_learn-more-btn{
+      width: 158px;
+      height: 48px;
+      background-color: #fff;
+      color: #3040C4;
+      border-radius: 2px;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 13px;
+      border: none;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    &_banner{
+      width: 100%;
+      margin-bottom: 36px;
+    }
 }
 
-.headline_title{
-  font-weight:700;
-  font-size: 50px;
-  line-height: 50px;
-  letter-spacing: -0.3125px;
-  color: #2B292D;
-  margin: 0;
-}
-.headline_description{
-  margin-top: 24px;
-  font-size: 24px;
-  line-height: 34px;
-  color: #2B292D;
-}
-.headline_actions{
-  margin-top: 30px;
-}
-
-.headline_learn-more-btn{
-  width: 158px;
-  height: 48px;
-  background-color: #fff;
-  color: #3040C4;
-  border-radius: 2px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 13px;
-  border: none;
-  text-align: center;
-  margin-top: 15px;
-}
-.headline_banner{
-  width: 100%;
-  margin-bottom: 36px;
-}
 @media screen and (max-width:399px) {
   .headline_actions-btn{
     width: 100%;
@@ -63,7 +68,6 @@
   .headline_title{
     width: 754px;
     height: 165px;
-    /* font-weight: 700; */
     font-size: 80px;
     line-height: 78px;
     letter-spacing: -0.5px;

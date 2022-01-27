@@ -1,18 +1,21 @@
 .order{
   width: 100%;
   background-color: #F4F5F7;
+
+    &_wrapper{
+      margin: 50px 15px 50px;
+    }
+
+    &_text{
+      margin-top: 40px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: -0.25px;
+    }
 }
-.order_wrapper{
-  margin: 50px 15px 50px;
-}
-.order_text{
-  margin-top: 40px;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  letter-spacing: -0.25px;
-}
+
 .get_notified{
   margin-top: 18px;
   font-size: 22px;

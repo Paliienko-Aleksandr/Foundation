@@ -2,22 +2,33 @@
   margin-top: auto;
   display: flex;
   flex-direction: column;
+
+    &-description {
+      display: none;
+    }
+
+    &_line_smart {
+      display: block;
+      border-top: 1px solid #2b292d;
+      opacity: 0.1;
+      margin: 0;
+    }
 }
 .logo_footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+    &_image {
+      margin-right: 0px;
+    }
+
+    &_text {
+      margin-top: 20px;
+      text-align: center;
+    }
 }
-.logo_footer_image {
-  margin-right: 0px;
-}
-.logo_footer_text {
-  margin-top: 20px;
-  text-align: center;
-}
-.footer-description {
-  display: none;
-}
+
 .about-company {
   margin: 40px 30px;
 }
@@ -29,28 +40,26 @@
 .app_store {
   margin-right: 10px;
 }
-.footer_line_smart {
-  display: block;
-  border-top: 1px solid #2b292d;
-  opacity: 0.1;
-  margin: 0;
-}
+
 .additional-navigation {
   margin: 30px 0px 30px 15px;
 }
+.nav-links{
+    &_list-item {
+      font-size: 18px;
+      line-height: 30px;
+      color: rgba(43, 41, 45, 0.6);
+    }
+    &_list {
+      margin-top: 18px;
+    }
+}
 .nav-links_title {
   color: #2b292d;
-}
-.nav-links_title_smart {
-  margin-top: 30px;
-}
-.nav-links_list-item {
-  font-size: 18px;
-  line-height: 30px;
-  color: rgba(43, 41, 45, 0.6);
-}
-.nav-links_list {
-  margin-top: 18px;
+    
+    &_smart {
+      margin-top: 30px;
+    }
 }
 
 .terms_item {
@@ -62,11 +71,13 @@
 .social-links {
   margin-left: auto;
   margin-top: 31px;
+
+    &_item {
+      margin-left: 20px;
+    }
 }
 
-.social-links_item {
-  margin-left: 20px;
-}
+
 
 @media screen and (min-width: 400px) {
   .footer {
