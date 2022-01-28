@@ -4,6 +4,14 @@
 
     &_wrapper{
       margin: 50px 15px 50px;
+
+      @include for-large-up{
+        width: 1140px;
+        margin: auto;
+        margin-left: 224px;
+        margin-top: 73px;
+        display: flex;
+      }
     }
 
     &_text{
@@ -13,6 +21,24 @@
       line-height: 40px;
       text-align: center;
       letter-spacing: -0.25px;
+
+      @include for-large-up{
+        text-align: inherit;
+      }
+    }
+
+    @include for-large-up{
+      width: 1400px;
+      height: 441px;
+      margin-left: 122px;
+      margin-right: 230px;
+    }
+    
+    &_description{
+      @include for-large-up{
+        margin-left: 122px;
+        margin-right: 230px;
+      }
     }
 }
 
@@ -24,6 +50,11 @@
 }
 .email_send{
   margin-top: 40px;
+
+  @include for-large-up{
+    display: flex;
+    margin-top: 26px;
+  }
 }
 .form-input{
   width: 100%;
@@ -31,6 +62,10 @@
   background: #FFFFFF;
   border: 1px solid rgba(43, 41, 45, 0.2);
   border-radius: 2px;
+
+  @include for-large-up{
+    width: 385px;
+  }
 }
 .form-input::placeholder{
   text-align: center;
@@ -43,6 +78,12 @@
   margin-top: 12px;
   width: 100%;
   height: 48px;
+
+  @include for-large-up{
+    width: 160px;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
 }
 .terms_of_use{
   margin-top: 10px;
@@ -51,36 +92,4 @@
   color: rgba(43, 41, 45, 0.6);
 }
 
-@media screen and (min-width:400px) {
-  .order{
-    width: 1400px;
-    height: 441px;
-  }
-  .order_wrapper{
-    width: 1140px;
-    margin: auto;
-    margin-left: 224px;
-    margin-top: 73px;
-    display: flex;
-  }
-  .order_description{
-    margin-left: 122px;
-    margin-right: 230px;
-  }
-  .order_text{
-    text-align: inherit;
-  }
-  .email_send{
-    display: flex;
-    margin-top: 26px;
-    
-  }
-  .form-input{
-    width: 385px;
-  }
-  .btn{
-    width: 160px;
-    margin-top: 0px;
-    margin-left: 10px;
-  }
-}
+

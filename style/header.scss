@@ -8,6 +8,10 @@
 
     &_button{
       display: none;
+
+      @include for-large-up{
+        display: block;
+      }
     }
 
     &_menu-button{
@@ -17,6 +21,10 @@
       height: 100%;
       margin-left: auto;
       background: transparent;
+
+      @include for-large-up{
+        display: none;
+      }
     }
 
     &_menu-icon{
@@ -25,10 +33,23 @@
       height: 13px;
       background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
     }
+
+    @include for-large-up{
+      width: 1140px;
+      height: 62px;
+      margin: auto;
+      display: flex;
+      background-color: #F3C6BD;
+    }
 }
 
 .top-section {
   background-color: #F3C6BD;
+
+  @include for-large-up{
+    background-color: #F3C6BD; 
+    padding-top: 39px;
+  }
 }
 .navigation{
   display: none;
@@ -58,6 +79,12 @@
       margin-left: 11px;
     }
     
+    @include for-large-up{
+      display: block;
+      margin-left: auto;
+      margin-top: 7px;
+      margin-right: 75px;
+    }
 }
 
 .logo {
@@ -73,10 +100,25 @@
       font-size: 20px;
       line-height: 25px;
       font-weight: 700;
+
+      @include for-large-up{
+       width: 60px;
+        height: 60px;
+        margin-right: 15px;
+      }
     }
 
     &_description {
       display: none;
+
+      @include for-large-up{
+        display: inline;
+        font-size: 18px;
+        line-height: 25px;
+        color: #2B292D;
+        opacity: 0.6;
+  }
+      }
     }
 
     &_text {
@@ -84,43 +126,6 @@
       flex-direction: column;
       justify-content: center;
     }
-}
 
 
-@media screen and (min-width:400px) {
-  .top-section {
-   background-color: #F3C6BD; 
-    padding-top: 39px;
-  }
-  .navigation {
-    display: block;
-    margin-left: auto;
-    margin-top: 7px;
-    margin-right: 75px;
-  }
-  .header {
-    width: 1140px;
-    height: 62px;
-    margin: auto;
-    display: flex;
-    background-color: #F3C6BD;
-  }
-  .header_button{
-    display: block;
-  }
-  .header_menu-button{
-    display: none;
-  }
-  .logo_description {
-    display: inline;
-    font-size: 18px;
-    line-height: 25px;
-    color: #2B292D;
-    opacity: 0.6;
-  }
-  .logo_image {
-    width: 60px;
-    height: 60px;
-    margin-right: 15px;
-  }
-}
+

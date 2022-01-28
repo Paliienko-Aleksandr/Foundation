@@ -12,6 +12,55 @@
       border-top: 1px solid #2b292d;
       opacity: 0.1;
       margin: 0;
+
+      @include for-large-up{
+        display: none;
+      }
+    }
+
+    @include for-large-up{
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+    }
+      
+    &_navigation {
+
+      @include for-large-up{
+        width: 1140px;
+        height: 338px;
+        margin: 0 auto;
+        display: flex;
+      }
+    }
+
+    &_line{
+      @include for-large-up{
+        border-top: 1px solid #2b292d;
+        opacity: 0.1;
+        margin: 0;
+      }
+    }
+
+    &-links{
+      @include for-large-up{
+        display: flex;
+        align-items: center;
+        width: 1140px;
+        height: 50px;
+        margin: 0 auto;
+      }
+    }
+
+    &-description{
+      @include for-large-up{
+        display: inline-block;
+        width: 360px;
+        margin-top: 26px;
+        font-size: 18px;
+        line-height: 26px;
+        color: rgba(43, 41, 45, 0.6);
+      }
     }
 }
 .logo_footer {
@@ -21,21 +70,45 @@
 
     &_image {
       margin-right: 0px;
+
+      @include for-large-up{
+        margin-right: 15px;
+      }
     }
 
     &_text {
       margin-top: 20px;
       text-align: center;
+
+      @include for-large-up{
+        margin-top: 0px;
+        text-align: left;
+      }
+    }
+
+    @include for-large-up{
+      display: flex;
+      flex-direction: row;
     }
 }
 
 .about-company {
   margin: 40px 30px;
+
+  @include for-large-up{
+    margin-top: 44px;
+  }
 }
 .logo_icon_wrapper {
   display: flex;
   justify-content: center;
   margin-top: 31px;
+
+  @include for-large-up{
+    display: flex;
+    margin-top: 25px;
+    justify-content: left;
+  }
 }
 .app_store {
   margin-right: 10px;
@@ -43,6 +116,19 @@
 
 .additional-navigation {
   margin: 30px 0px 30px 15px;
+
+
+    &_column{
+      @include for-large-up{
+        margin-right: 29px;
+      }
+    }
+
+  @include for-large-up{
+    margin-top: 60px;
+    margin-left: auto;
+    display: flex;
+  }
 }
 .nav-links{
     &_list-item {
@@ -53,144 +139,72 @@
     &_list {
       margin-top: 18px;
     }
+
+    @include for-large-up{
+      width: 265px;
+    }
 }
 .nav-links_title {
   color: #2b292d;
     
     &_smart {
       margin-top: 30px;
+    
+      @include for-large-up{
+        margin-top: 0px;
+      }
+    }
+
+    @include for-large-up{
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+      color: #2b292d;
     }
 }
+.terms{
+  &_item {
+    color: rgba(43, 41, 45, 0.6);
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 15px;
 
-.terms_item {
-  color: rgba(43, 41, 45, 0.6);
-  font-size: 14px;
-  line-height: 22px;
-  margin-left: 15px;
+    @include for-large-up{
+    margin-left: 0px;
+    margin-right: 22px;
+    }
+  }
+  
+  @include for-large-up{
+    line-height: 50px;
+    margin-left: 30px;
+  }
 }
+
 .social-links {
   margin-left: auto;
   margin-top: 31px;
 
     &_item {
       margin-left: 20px;
+
+      @include for-large-up{
+        margin-left: 20px;
+      }
     }
+
+    @include for-large-up{
+    margin-left: auto;
+    margin-top: 0px;
+  }
+    
 }
-
-
-
-@media screen and (min-width: 400px) {
-  .footer {
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .logo_footer {
-    display: flex;
-    flex-direction: row;
-  }
-  .logo_footer_image {
-    margin-right: 15px;
-  }
-  .logo_footer_text {
-    margin-top: 0px;
-    text-align: left;
-  }
-  .about-company {
-    margin-top: 44px;
-  }
-  .footer_line_smart {
-    display: none;
-  }
-
-  .additional-navigation {
-    margin-top: 60px;
-    margin-left: auto;
-    display: flex;
-  }
-
-  .additional-navigation_column {
-    margin-right: 29px;
-  }
-
-  .nav-links_title {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
-    color: #2b292d;
-  }
-  .nav-links_title_smart {
-    margin-top: 0px;
-  }
-
-  .nav-links {
-    width: 265px;
-  }
-
-  .footer-links {
-    display: flex;
-    align-items: center;
-    width: 1140px;
-    height: 50px;
-    margin: 0 auto;
-  }
-
-  .footer_navigation {
-    width: 1140px;
-    height: 338px;
-    margin: 0 auto;
-    display: flex;
-  }
-
-  .footer_line {
-    border-top: 1px solid #2b292d;
-    opacity: 0.1;
-    margin: 0;
-  }
-
-  .footer-links {
-    display: flex;
-    align-items: center;
-    width: 1140px;
-    height: 50px;
-    margin: 0 auto;
-  }
-
-  .terms {
-    line-height: 50px;
-    margin-left: 30px;
-  }
-
-  .terms_item {
-    margin-left: 0px;
-    margin-right: 22px;
-  }
-
-  .social-links {
-    margin-left: auto;
-    margin-top: 0px;
-  }
-
-  .social-links_item {
-    margin-left: 20px;
-  }
-
-  .footer-description {
-    display: inline-block;
-    width: 360px;
-    margin-top: 26px;
-    font-size: 18px;
-    line-height: 26px;
-    color: rgba(43, 41, 45, 0.6);
-  }
-
-  .logo_icon_wrapper {
-    display: flex;
-    margin-top: 25px;
-    justify-content: left;
-  }
-
-  .app_store {
+.app_store {
+  @include for-large-up{
     margin-right: 10px;
   }
+ 
 }
+
+
+
